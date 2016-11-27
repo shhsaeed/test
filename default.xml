@@ -1,33 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="aosp"
-           fetch="https://android.googlesource.com"
-           review="android-review.googlesource.com"
-           revision="refs/tags/android-7.1.0_r7" />
-
   <remote  name="github"
            fetch="https://github.com" />
-           
-  <remote  name="CyanogenMod"
-           fetch="https://github.com/cyanogenmod"
-           review="review.cyanogenmod.org" />
 
-  <remote  name="FireHound"
-           fetch="https://github.com/FireHound"
-           revision="7.1" />
-           
-  <remote  name="PMS22"
-           fetch="https://github.com/PMS22"
-           revision="mm" />
+  <remote  name="aosp"
+           fetch="https://android.googlesource.com"
+           review="android-review.googlesource.com" />
 
-  <default revision="refs/heads/cm-14.1"
-           remote="github"
+  <remote  name="bb"
+           fetch="https://bitbucket.org/" />
+
+  <remote  name="cm"
+           fetch="https://github.com/CyanogenMod"
+           revision="cm-14.1" />
+
+  <default revision="refs/tags/android-7.1.0_r7"
+           remote="aosp"
            sync-c="true"
            sync-j="4" />
-
-  <project path="hardware/qcom/camera" name="CyanogenMod/android_hardware_qcom_camera" groups="qcom" />
-  <project path="packages/apps/ContactsCommon" name="CyanogenMod/android_packages_apps_ContactsCommon" groups="pdk-fs" />
-  <project path="external/wpa_supplicant_8" name="CyanogenMod/android_external_wpa_supplicant_8" groups="pdk" />
+  <default revision="refs/tags/android-7.1.0_r7"
+           remote="aosp"
+           sync-c="true"
+           sync-j="4" />
+  
+  
+  <project path="hardware/qcom/camera" name="hardware_qcom_camera" groups="qcom" remote="tesla" />
+  <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="tesla" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" groups="pdk" remote="tesla" />
+  <project path="packages/apps/ContactsCommon" name="packages_apps_ContactsCommon" groups="pdk-fs" remote="tesla" />
+  <project path="external/sqlite" name="platform/external/sqlite" groups="pdk" />
+  <project path="hardware/qcom/display" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" />
+  <project path="hardware/qcom/display-caf/apq8084" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8084" />
+  <project path="hardware/qcom/display-caf/msm8916" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8916" />
+  <project path="hardware/qcom/display-caf/msm8937" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8937" />
+  <project path="hardware/qcom/display-caf/msm8952" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8952" />
+  <project path="hardware/qcom/display-caf/msm8960" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8960" />
+  <project path="hardware/qcom/display-caf/msm8974" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8974" />
+  <project path="hardware/qcom/display-caf/msm8994" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8994" />
+  <project path="hardware/qcom/display-caf/msm8996" name="hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="tesla" revision="n7.0-caf-8996" />
 
 </manifest>
