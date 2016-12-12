@@ -30,10 +30,6 @@
            sync-j="4" />
  
   <project path="prebuilts/clang/host/linux-x86/sdclang-3.8" remote="bb" name="mdalexca/sdclang-3.8" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="mdalexca/aarch64-linux-android-4.9" remote="bb" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9" name="mdalexca/arm-eabi-4.9" remote="bb" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="mdalexca/arm-linux-androideabi-4.9" remote="bb" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x" name="mdalexca/aarch64-linux-android-6.x" remote="bb" clone-depth="1" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-6.x" name="mdalexca/arm-eabi-6.x" remote="bb" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-6.x" name="uberroms/arm-linux-androideabi-6.x" remote="bb" clone-depth="1" />
 </manifest>
